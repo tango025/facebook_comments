@@ -5,25 +5,8 @@ chrome.runtime.onMessage.addListener(
         var arr2 = $("._6w1q._77bi ._4sxc._42ft");
        
         executeArray(vmcArray,onceFinished);
-
-            
-    
-        
-        
-        
-            
-            sendResponse({ proto: "protocol" });
+        sendResponse({ proto: "protocol" });
     });
-
-
-//          while (count < 4 && vmcArray.length != 0) {
-            // for (var i = 0; i < vmcArray.length; i++)
-            // {
-            //     vmcArray[i].click();
-            //     count++;
-            // }
-            //     vmcArray = $("._3tz_._7794 ._4sxc._42ft");
-            // };
 
 function executeArray(vmcArray,callback) {
     for (var i = 0; i < vmcArray.length; i++) {
