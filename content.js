@@ -9,9 +9,12 @@ chrome.runtime.onMessage.addListener(
     });
 
 function executeArray(vmcArray) {
-	console.log(vmcArray);
+	console.log(typeof(vmcArray));
+	//accessing array properties inside setTimeout
     for (var i = 0; i < vmcArray.length; i++) {
+    	//to pass value of i
         if (vmcArray.hasOwnProperty(i)) {
+        	//capI = captured value of i
             (function (capI) {
                 setTimeout(() => {
                     vmcArray[capI].click();
