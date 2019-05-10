@@ -4,11 +4,12 @@ chrome.runtime.onMessage.addListener(
         var vmcArray = $("._3tz_._7794 ._4sxc._42ft");
         var arr2 = $("._6w1q._77bi ._4sxc._42ft");
        
-        executeArray(vmcArray,onceFinished);
+        executeArray(vmcArray);
         sendResponse({ proto: "protocol" });
     });
 
-function executeArray(vmcArray,callback) {
+function executeArray(vmcArray) {
+	console.log(vmcArray);
     for (var i = 0; i < vmcArray.length; i++) {
         if (vmcArray.hasOwnProperty(i)) {
             (function (capI) {
@@ -19,7 +20,7 @@ function executeArray(vmcArray,callback) {
         }
 
     };
-    callback();
+    //callback();
 }
 function onceFinished(){
     var arr = $("._3tz_._7794 ._4sxc._42ft");
